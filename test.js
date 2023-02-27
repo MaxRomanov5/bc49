@@ -41,3 +41,22 @@
 //   companyName + " has " + (repairBots + defenceBots) + " bots in stock";
 
 // console.log(message);
+
+// Напиши скрипт, який розраховує індекс маси тіла людини. Для цього необхідно розділити вагу в кілограмах на квадрат висоти людини у метрах.
+
+// Вага та висота зберігаються у змінних weight та height, але не як числа, а в вигляді рядків (спеціально для завдання).
+//  Не цілі числа можуть бути задані у вигляді 24.7 або 24,7, тобто як роздільник дробової частини може бути кома.
+
+// Індекс маси тіла необхідно округлити до однієї цифри після коми;
+
+// let weight = '88,3';
+// let height = '1.75';
+
+// const parsWeight = Number.parseFloat(weight.replace("," , "."));
+// console.log(parsWeight);
+
+// const parsHeight = Number.parseFloat(height.replace("," , "."));
+// console.log(parsHeight)
+
+// const bmi = parsWeight  / parsHeight**2;
+// console.log(bmi.toFixed(1)); // 28.8
