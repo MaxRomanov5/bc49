@@ -60,3 +60,14 @@
 
 // const bmi = parsWeight  / parsHeight**2;
 // console.log(bmi.toFixed(1)); // 28.8
+
+// Напиши скрипт для відображення годин та хвилин у консолі браузера у вигляді рядка формату "14 г. 26 хв.". Якщо значення змінної minutes дорівнює 0, то виводь рядок "14 г.", без хвилин.
+
+// const hours = 14;
+// const minutes = 2;
+
+// if (minutes === 0) {
+//   console.log(`${hours} г.`);
+// } else {
+//   console.log(`${hours} г. ${minutes} хв.`);
+// }
