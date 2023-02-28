@@ -71,3 +71,32 @@
 // } else {
 //   console.log(`${hours} г. ${minutes} хв.`);
 // }
+
+
+
+// // Отрефактори код так, щоб у змінну value присвоювалося значення змінної incomingValue, 
+// якщо воно не рівне undefined або null. В іншому випадку має присвоюватися значення defaultValue.
+//  Перевір роботу скрипта для наступних значень змінної incomingValue: null, undefined, 0, false. Використовуй оператор ?? (nullish coalescing operator).
+
+
+// null || undefined ?? "foo"; // raises a SyntaxError
+// true && undefined ?? "foo"; // raises a SyntaxError
+// (null || undefined) ?? "foo"; // returns "foo"
+
+// const incomingValue = undefined;
+// const defaultValue = "10";
+// const value = incomingValue ?? defaultValue 
+// console.log(value);
+
+// Використовуючи конструкцію if..else та prompt, напиши код, який питатиме: "Яка офіційна назва JavaScript?". 
+// Якщо користувач вводить ECMAScript, то показуй alert з рядком "Правильно!", в іншому випадку - "Не знаєте? ECMAScript!"
+
+// let answear = prompt('Яка офіційна назва JavaScript?');
+// console.log(answear)
+
+// if( answear === "ECMAScript" ){
+//     alert("Правильно!")
+// }
+// else{
+//     alert("Не знаєте? ECMAScript!")
+// }
