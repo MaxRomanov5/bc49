@@ -128,3 +128,38 @@
 // while (input <= 100) {
 //     input = Number(prompt("Введіть число більше за 100."));
 // }
+
+//Написати функцію, яка буде перевіряти чи є в масиві число 4 і повертати новий масив з цими четвірками.
+//Якщо  в масиві є число 10, то функція повертає рядок 'В цьому масиві є число 10'.
+
+// function filterArray (arr){
+//     let array = []
+
+//     if(arr.includes(10)) {
+//         return 'В цьому масиві є число 10'
+//     } 
+
+//     for (let number of arr) {
+//         if (number === 4) {
+//             array.push(number)
+//         }
+//     }
+//     return array
+
+// }
+
+// console.log(filterArray([2,34,55,67,4,14,10,4,45.98,4]));
+// console.log(filterArray([4,6,8,2,9,4,4,78,12,11,6,4,4]));
+
+// function filterArray(arr) {
+//     const resultArray = [];
+//     for (let i = 0; i < arr.length; i += 1) {
+//       if (arr[i] === 4) {
+//         resultArray.push(arr[i]);
+//       }
+//       if (arr.includes(10)) {
+//         return `В цьому масиві (${arr}) є число 10`;
+//       }
+//     }
+//     return resultArray;
+//   }
