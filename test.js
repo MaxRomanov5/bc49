@@ -38,3 +38,18 @@
 //   result = text + " " + result;
 // }
 // console.log(result.trim());
+
+// function sumCount(arr) {
+//   let total = 0;
+//   for (let number of arr) {
+//     if (Array.isArray(number)) {
+//       const miniResult = sumCount(number);
+//       total += miniResult;
+//       continue;
+//     }
+//     total += number;
+//   }
+//   return total;
+// }
+
+// console.log(sumCount([[1, 3], 2, 5]));
