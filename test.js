@@ -84,3 +84,37 @@
 //     } bingoGame()
 // }
 // bingoGame()
+
+
+
+
+// function includes(array, value) {
+    
+//   // return array.includes(value) ? true : false;
+//   for (let i = 0; i < array.length; i++)
+//     {if (Number(array[i]) === value) {
+//     return true};
+     
+//     }
+//     return false;
+
+//   }
+  
+
+// console.log(includes([1, 2, 3, 4, 5], 4))
+const apartment = {
+    descr: "Spacious apartment in the city center",
+    rating: 4,
+    price: 2153,
+  };
+  const keys = [];
+  const values = [];
+for (const key in apartment) {
+    keys.push(key);
+  };
+  for (const value in apartment) {
+    values.push(value);
+  };
+
+  console.log(keys);
+  console.log(values)
