@@ -59,50 +59,50 @@ const countries = [
 // console.log(countries);
 // console.log(filteredCountries);
 
-const classTutor = {
-	students: [
-		{ name: 'kriss', grades: { math: 9, geography: 10, physics: 7 } },
-		{ name: 'jane', grades: { math: 6, geography: 10, physics: 7 } },
-		{ name: 'alex', grades: { math: 9, geography: 4, physics: 7 } },
-		{ name: 'gregory', grades: { math: 12, geography: 12, physics: 12 } },
-		{ name: 'steve', grades: { math: 11, geography: 8, physics: 6 } },
-		{ name: 'julia', grades: { math: 4, geography: 9, physics: 6 } }
-	],
+// const classTutor = {
+// 	students: [
+// 		{ name: 'kriss', grades: { math: 9, geography: 10, physics: 7 } },
+// 		{ name: 'jane', grades: { math: 6, geography: 10, physics: 7 } },
+// 		{ name: 'alex', grades: { math: 9, geography: 4, physics: 7 } },
+// 		{ name: 'gregory', grades: { math: 12, geography: 12, physics: 12 } },
+// 		{ name: 'steve', grades: { math: 11, geography: 8, physics: 6 } },
+// 		{ name: 'julia', grades: { math: 4, geography: 9, physics: 6 } }
+// 	],
 
-	//Написати функцію,яка буде повертати масив всіх студентів
-	getStudents() {
-		return this.students;
-	},
-	//Написати функцію,яка буде додавати студета до класу
-	addStudent({name = 'Anon', grades : { math = 0 , geography = 0, physics = 0}}) {
-		this.students.push({ name, grades: { math, geography, physics } });
-	},
-	//Написати функцію,яка буде повертати середню оцінку студета.Якщо студент не знайдений,то повертає 'Cтудент не знайдений'
-	studentGrade(name) {
-		let total = 0;
+// 	//Написати функцію,яка буде повертати масив всіх студентів
+// 	getStudents() {
+// 		return this.students;
+// 	},
+// 	//Написати функцію,яка буде додавати студета до класу
+// 	addStudent({name = 'Anon', grades : { math = 0 , geography = 0, physics = 0}}) {
+// 		this.students.push({ name, grades: { math, geography, physics } });
+// 	},
+// 	//Написати функцію,яка буде повертати середню оцінку студета.Якщо студент не знайдений,то повертає 'Cтудент не знайдений'
+// 	studentGrade(name) {
+// 		let total = 0;
 
-		for (let key of this.students) {
-			if (key.name === name) {
-				let digits = Object.values(key.grades);
-				for (let fork of digits) {
-					total += fork;
-				}
-				return (total / 3).toFixed(1);
-			}
-		}
-		return 'Студент не знайдений';
-    },
+// 		for (let key of this.students) {
+// 			if (key.name === name) {
+// 				let digits = Object.values(key.grades);
+// 				for (let fork of digits) {
+// 					total += fork;
+// 				}
+// 				return (total / 3).toFixed(1);
+// 			}
+// 		}
+// 		return 'Студент не знайдений';
+//     },
     
-	// Написати функцію,яка буде повертати середню оцінку класу по певному предмету
-	objectGrade(object) {},
+// 	// Написати функцію,яка буде повертати середню оцінку класу по певному предмету
+// 	objectGrade(object) {},
 
-	// Написати функцію,яки порахує середню оцінку всього класу по всім предметам
-	classGrade() {}
-};
-console.log(classTutor.addStudent({name:'loly',grades:{math:6,geography:10,physics:5}}));
-console.log(classTutor.addStudent({name:'jack',grades:{}}));
-console.log(classTutor.addStudent({grades:{math:12,geography:3,physics:8}}));
-console.log(classTutor.getStudents());
+// 	// Написати функцію,яки порахує середню оцінку всього класу по всім предметам
+// 	classGrade() {}
+// };
+// console.log(classTutor.addStudent({name:'loly',grades:{math:6,geography:10,physics:5}}));
+// console.log(classTutor.addStudent({name:'jack',grades:{}}));
+// console.log(classTutor.addStudent({grades:{math:12,geography:3,physics:8}}));
+// console.log(classTutor.getStudents());
 
 
 
@@ -113,3 +113,26 @@ console.log(classTutor.getStudents());
 // console.log(classTutor.objectGrade('math'));
 
 // console.log(classTutor.getStudents());
+
+
+
+///Написати фунцію,яка буде приймати аргументами два обєкта і повертати один.Ключі в обєктах однакові і
+//треба щоб обирався в фінальний обєкт ключ,який має більше значення
+
+// function newObject(obj1, obj2) { 
+// 	const finallyObj = {}
+// 	const keys = Object.keys(obj1);
+// 	for (const key of keys) { 
+// 		if (obj1[key] > obj2[key]) {
+// 			finallyObj[key] = obj1[key]
+// 		} else { 
+// 			finallyObj[key] = obj2[key]
+// 		}
+// 	} return finallyObj;
+// }
+
+
+// console.log(newObject({a:1,b:8,c:2},{a:5,b:3,c:9}));
+// console.log(newObject({ a: 5, b: 1, c: 6 }, { a: 4, b: 7, c: 3 }));
+
+
