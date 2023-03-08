@@ -275,5 +275,19 @@ const countries = [
 // const sortedCountrys = [...countries].sort((firstCountry, secondCountry) => {
 //   return secondCountry.area - firstCountry.area;
 // });
-
 // console.table(sortedCountrys);
+//Порахувати загалье населення країн через reduce
+
+// const totalPopulation = countries.reduce((acc, country) => {return acc + country.population}, 0)
+// console.log(totalPopulation);
+
+
+//Створити новий масив без країн,які починаються на букву 'R'
+
+const filerOfRContries2 = country => !country.name.startsWith('R')
+const filerOfRContries = countries.filter(filerOfRContries2) ;
+
+
+
+console.log(filerOfRContries)
+contry.split(``)
