@@ -281,13 +281,10 @@ const countries = [
 // const totalPopulation = countries.reduce((acc, country) => {return acc + country.population}, 0)
 // console.log(totalPopulation);
 
-
 //Створити новий масив без країн,які починаються на букву 'R'
 
 // const filerOfRContries2 = country => !country.name.startsWith('R')
 // const filerOfRContries = countries.filter(filerOfRContries2) ;
-
-
 
 // console.log(filerOfRContries)
 // contry.split(``)
@@ -296,7 +293,7 @@ const countries = [
 
 // function countArea(array) {
 //   return array.reduce((acc, country) => { return acc + country.area }, 0) / array.length
-  
+
 // }
 
 // function countArea(array) {
@@ -309,3 +306,12 @@ const countries = [
 //   return totalArray / countryCount;
 // }
 // console.log(countArea(countries));
+
+//Створити масив унікальних країн-сусідів в алфавітному порядку використати reduce
+
+// const uniqueBorders = countries
+//   .flatMap(({ borders }) => borders)
+//   .filter((border, index, array) => array.indexOf(border) === index)
+//   .sort();
+
+// console.log(uniqueBorders);
