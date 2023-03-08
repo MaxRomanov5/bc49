@@ -284,10 +284,28 @@ const countries = [
 
 //Створити новий масив без країн,які починаються на букву 'R'
 
-const filerOfRContries2 = country => !country.name.startsWith('R')
-const filerOfRContries = countries.filter(filerOfRContries2) ;
+// const filerOfRContries2 = country => !country.name.startsWith('R')
+// const filerOfRContries = countries.filter(filerOfRContries2) ;
 
 
 
-console.log(filerOfRContries)
-contry.split(``)
+// console.log(filerOfRContries)
+// contry.split(``)
+
+//Написати функцію,яка буде рахувати середню площу країн
+
+// function countArea(array) {
+//   return array.reduce((acc, country) => { return acc + country.area }, 0) / array.length
+  
+// }
+
+// function countArea(array) {
+//   let countryCount = 0;
+//   const totalArray = array.reduce((acc, country) => {
+//     countryCount += 1
+//     return acc + country.area
+//   }, 0)
+
+//   return totalArray / countryCount;
+// }
+// console.log(countArea(countries));
