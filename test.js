@@ -51,3 +51,27 @@
 //   }
 // };
 // ladder.up().up().down().showStep()
+
+
+//Написати функцію додавання,віднімання грошей до балансу та підвязати її до аккаунту
+//Написати функцію обнулення рахунку
+
+// const account = {
+//   balance: 0
+  
+// }
+
+// function addMoney(amount) {
+//   this.balance += amount;
+
+// }
+
+// addMoney.apply(account, [100]);
+
+// const newAddMoney = addMoney.bind(account)
+// newAddMoney(200);
+// newAddMoney(500)
+// newAddMoney(2500)
+// console.log(account);
+
+
