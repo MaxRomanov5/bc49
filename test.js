@@ -121,63 +121,94 @@
 
 // Написати клас для банківських аккаунтів. Конструктор приймає ім'я(приватна властивість) та початковий баланс.
 
-class BankAccount {
-	static USD = 5;
+// class BankAccount {
+// 	static USD = 5;
 
-	#name;
+// 	#name;
 
-	constructor(name, amount) {
-		this.#name = name;
-		this._amount = amount;
-	}
+// 	constructor(name, amount) {
+// 		this.#name = name;
+// 		this._amount = amount;
+// 	}
 
-	// Створити функцію зміни величини коштів в аккаунті та повернення балансу за допомогою гетерів та сетерів
-	get amount() {
-		return this._amount;
-	}
+// 	// Створити функцію зміни величини коштів в аккаунті та повернення балансу за допомогою гетерів та сетерів
+// 	get amount() {
+// 		return this._amount;
+// 	}
 
-	set amount(value) {
-		this._amount += value;
-	}
+// 	set amount(value) {
+// 		this._amount += value;
+// 	}
 
-	addMoney(value) {
-		this.amount += value;
-	}
+// 	addMoney(value) {
+// 		this.amount += value;
+// 	}
 
-	// get name() {
-	// 	return this.#name;
-	// }
+// 	// get name() {
+// 	// 	return this.#name;
+// 	// }
 
-	// Додати класу курс доллара
+// 	// Додати класу курс доллара
 
-	getDollars() {
-		return this.amount / BankAccount.USD;
-	}
-}
+// 	getDollars() {
+// 		return this.amount / BankAccount.USD;
+// 	}
+// }
 
-const user = new BankAccount('Serhii', 10); // Создаем новый экз со всеми свойствами класса BankAccount
+// const user = new BankAccount('Serhii', 10); // Создаем новый экз со всеми свойствами класса BankAccount
 
-console.log(user.amount);
+// console.log(user.amount);
 
-user.amount = -10; // 136 рядок
-console.log(user.amount);
+// user.amount = -10; // 136 рядок
+// console.log(user.amount);
 
-user.addMoney(500);
+// user.addMoney(500);
 
-// console.log(user);
+// // console.log(user);
 
-// console.log(user.getDollars());
+// // console.log(user.getDollars());
 
-const user2 = new BankAccount('Max', 200); // Создаем новый экз со всеми свойствами класса BankAccount
+// const user2 = new BankAccount('Max', 200); // Создаем новый экз со всеми свойствами класса BankAccount
 
 // user2.USD = 10;
 // console.log(user2.getDollars());
 // console.log(user2);
 
-BankAccount.USD = 38; // Меняем курс доллара при помощи изменений в классе (глобально)
-console.log(user);
-console.log(user.getDollars());
+// BankAccount.USD = 38; // Меняем курс доллара при помощи изменений в классе (глобально)
+// console.log(user);
+// console.log(user.getDollars());
 
 //  |Second option|
 // user._amount += 500;
 // console.log(user);
+
+// class Human {
+//   hands = 2;
+//   constructor(name, weight) {
+//     this.name = name;
+//     this._weight = weight;
+//   }
+//   get weight() {
+//     return this._weight;
+//   }
+//   set weight(newWeight) {
+//     this._weight = newWeight;
+//   }
+// }
+
+// class Doctor extends Human {
+//   constructor(name, weight, experience) {
+//     super(name, weight);
+//     this.experience = experience;
+//   }
+//   makeOperation() {
+//     return `Our doctor ${this.name} has ${this.hands} hands`;
+//   }
+// }
+
+// const surge = new Doctor("Henrique", 73, 24);
+// console.log(surge);
+
+// surge.weight = 80;
+// console.log(surge);
+// console.log(surge.makeOperation());
