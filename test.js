@@ -100,3 +100,84 @@
 // dog.changeLeg(5);
 // console.log(animal);
 // console.log(dog);
+
+/**
+  |============================
+  |  module 5 part 2 - day 10.03.2023
+  |============================
+*/
+
+//Написати клас для банківських аккаунтів. Конструктор приймає ім'я(приватна властивість) та початковий баланс.
+
+//Створити функцію зміни величини коштів в аккаунті та повернення балансу за допомогою гетерів та сетерів
+
+//Додати класу курс доллара
+
+// Написати функцію виведення можливої кількості долларів
+
+//Змінити курс доллара і викликати знову функцію з долларом
+
+//Зробити так щоб зміна курса доллара була відразу у всіх екземплярах класу
+
+// Написати клас для банківських аккаунтів. Конструктор приймає ім'я(приватна властивість) та початковий баланс.
+
+class BankAccount {
+	static USD = 5;
+
+	#name;
+
+	constructor(name, amount) {
+		this.#name = name;
+		this._amount = amount;
+	}
+
+	// Створити функцію зміни величини коштів в аккаунті та повернення балансу за допомогою гетерів та сетерів
+	get amount() {
+		return this._amount;
+	}
+
+	set amount(value) {
+		this._amount += value;
+	}
+
+	addMoney(value) {
+		this.amount += value;
+	}
+
+	// get name() {
+	// 	return this.#name;
+	// }
+
+	// Додати класу курс доллара
+
+	getDollars() {
+		return this.amount / BankAccount.USD;
+	}
+}
+
+const user = new BankAccount('Serhii', 10); // Создаем новый экз со всеми свойствами класса BankAccount
+
+console.log(user.amount);
+
+user.amount = -10; // 136 рядок
+console.log(user.amount);
+
+user.addMoney(500);
+
+// console.log(user);
+
+// console.log(user.getDollars());
+
+const user2 = new BankAccount('Max', 200); // Создаем новый экз со всеми свойствами класса BankAccount
+
+// user2.USD = 10;
+// console.log(user2.getDollars());
+// console.log(user2);
+
+BankAccount.USD = 38; // Меняем курс доллара при помощи изменений в классе (глобально)
+console.log(user);
+console.log(user.getDollars());
+
+//  |Second option|
+// user._amount += 500;
+// console.log(user);
