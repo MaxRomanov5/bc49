@@ -225,28 +225,36 @@ const countries = [
 // Для додавання країн використати insertAdjacentHTML
 // Змінити колір тексту на червоний
 
-const list = document.createElement("ul");
-list.classList.add("country-list");
+// const list = document.createElement("ul");
+// list.classList.add("country-list");
 
-document.body.append(list);
+// document.body.append(list);
 
-let backup = ``;
+// let backup = ``;
 
-countries.forEach((country) => {
-  backup += `<li><p class = 'name'>${country.name}</p> <p>${country.area}</p></li>`;
-});
+// countries.forEach((country) => {
+//   backup += `<li><p class = 'name'>${country.name}</p> <p>${country.area}</p></li>`;
+// });
 
-list.insertAdjacentHTML("beforeend", backup);
+// list.insertAdjacentHTML("beforeend", backup);
 
-//Країнам у назві яких є 'Republic' задати зелений колір
-const refs = {
-  list: [...list.children],
-};
-// const newList = [...list.children];
-refs.list.forEach((item) => {
-  const countryName = item.querySelector(".name");
-  if (countryName.textContent.includes("Republic")) {
-    countryName.style.color = "green";
-  }
-  console.log(item);
+// //Країнам у назві яких є 'Republic' задати зелений колір
+// const refs = {
+//   list: [...list.children],
+// };
+// // const newList = [...list.children];
+// refs.list.forEach((item) => {
+//   const countryName = item.querySelector(".name");
+//   if (countryName.textContent.includes("Republic")) {
+//     countryName.style.color = "green";
+//   }
+//   console.log(item);
+// });
+
+//Повісити на кнопку слухач,який прикожному натисканні буде змінювати
+//колір body на чорний,а колір тексту на білий
+
+const btnTheme = document.querySelector(".btnTheme");
+btnTheme.addEventListener("click", () => {
+  document.body.classList.toggle("blacktheme");
 });
