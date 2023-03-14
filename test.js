@@ -263,7 +263,7 @@
 // текст всередині першого інпуту має перейти в другий інпут,
 // а текст всередині другого в перший
 
-const btnSwitch = document.querySelector('.btn-switch');
+// const btnSwitch = document.querySelector('.btn-switch');
 // const inp1 = document.querySelector('.inp1');
 // const inp2 = document.querySelector('.inp2');
 
@@ -279,11 +279,17 @@ const btnSwitch = document.querySelector('.btn-switch');
 //червоний дів розміром 20х20 і стає неактивною
 
 
-btnSwitch.addEventListener('click', () => {
-    const divEl = document.createElement('div');
-    divEl.style.width = '20px'
-    divEl.style.height = '20px'
-    divEl.style.backgroundColor = 'red'
-    document.body.append(divEl)
-    btnSwitch.disabled = 'true'
-})
+// btnSwitch.addEventListener('click', () => {
+//     const divEl = document.createElement('div');
+//     divEl.style.width = '20px'
+//     divEl.style.height = '20px'
+//     divEl.style.backgroundColor = 'red'
+//     document.body.append(divEl)
+//     btnSwitch.disabled = 'true'
+// })
+
+// const form = document.querySelector('form')
+
+// const clonedForm = form.cloneNode(true)
+
+// document.body.append(clonedForm)
