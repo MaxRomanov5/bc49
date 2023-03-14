@@ -254,7 +254,24 @@
 //Повісити на кнопку слухач,який прикожному натисканні буде змінювати
 //колір body на чорний,а колір тексту на білий
 
-const btnTheme = document.querySelector(".btnTheme");
-btnTheme.addEventListener("click", () => {
-  document.body.classList.toggle("blacktheme");
-});
+// const btnTheme = document.querySelector(".btnTheme");
+// btnTheme.addEventListener("click", () => {
+//   document.body.classList.toggle("blacktheme");
+// });
+
+// Створити кнопку і два інпути.При натисканні на кнопку
+// текст всередині першого інпуту має перейти в другий інпут,
+// а текст всередині другого в перший
+
+const btnSwitch = document.querySelector('.btn-switch');
+const inp1 = document.querySelector('.inp1');
+const inp2 = document.querySelector('.inp2');
+
+btnSwitch.addEventListener('click', () => {
+    const inputValue1 = inp1.value
+    const inputValue2 = inp2.value 
+
+    inp1.value = inputValue2
+    inp2.value = inputValue1
+})
+    
